@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './photo.jpg';
 import './App.css';
+import Course from './components/Course';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <h1>
           Kiitos ja näkemiin!
         </h1>
+        <Course />
         <a
           className="App-link"
           href="https://www.youtube.com/user/niilo22"
