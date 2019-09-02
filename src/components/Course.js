@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 
 const Course = (props) => {
+    if(props.show){
     return (
     <div>
         <h1>{props.partName} {props.partDate[0]}</h1>
@@ -14,6 +15,9 @@ const Course = (props) => {
         </ul>
     </div>
     )
+    } else {
+    return <div /> 
+}
 }
 
 

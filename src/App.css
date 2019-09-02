@@ -31,3 +31,22 @@
     transform: rotate(360deg);
   }
 }
+
+.skillsContainer {
+  display: flex;
+  flex-direction:column;
+  margin: 0 auto;
+}
+
+.skillItem {
+  background: aqua;
+  border: 0.1em solid gray;
+  list-style-type:none;
+  padding:0.2em;
+}
+
+input {
+  width:100%;
+  padding:0;
+  margin: 0;
+}
