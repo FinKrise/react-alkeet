@@ -6,6 +6,8 @@ import Teht1 from './components/Teht1';
 import Teht2 from './components/Teht2';
 import Skills from './components/Skills';
 import ToggleButton from './components/ToggleButton';
+import images from './components/ImageData.js';
+import ImagesInfo from './components/ImagesInfo.js';
 
 const coursePart = "React alkeet";
 const courseDate = ["9.8.2019","12.8.2019"];
@@ -24,10 +26,13 @@ const initialSkills = ["ebin"];
 
 
 
+
+
 const App = () =>{
   const [show, setshow] = useState([true, true,true]);
   const [skills, setSkills] = useState(initialSkills);
   const [newSkill, setNewSkill] = useState("");
+  const [myImages, setMyImages] = useState(images);
 
   const handleClick = numberOfButtons => {
     let tempShow = [...show];
@@ -66,6 +71,9 @@ const handleSubmit = event => {
                 changeHandler={e => handleChange(e)}
                 submitHandler={e => handleSubmit(e)}
                 />
+        <ImagesInfo images={myImages} />
+        
+        <footer>
         <a
           className="App-link"
           href="https://www.youtube.com/user/niilo22"
@@ -74,6 +82,7 @@ const handleSubmit = event => {
         >
           Subscribe to Niilo22
         </a>
+        </footer>
       </header>
     </div>
   );
