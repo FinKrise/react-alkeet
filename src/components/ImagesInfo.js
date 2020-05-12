@@ -4,13 +4,22 @@ import '../App.css';
 const ImageInfo = ({imageData}) => {
     //console.log(imageData.title);
     const [show, setShow] = useState(false);
+    const [likes, setLikes] = useState(imageData.likes);
     
+    function like() {
+        let temp = likes;
+        temp++;
+        setLikes(temp);
+    }
+
     if(show) {
     return (
         <div>
             <h1> onClick={e => setShow(false)}>{imageData.title}</h1>
             <p>{imageData.description}</p>
             <img className="imageList" src={imageData.url} ></img>
+            <p>tykkäykset: {likes}</p>
+            <button onClick={e => like()}>tykkää</button>
         </div>
     )
 }  else {

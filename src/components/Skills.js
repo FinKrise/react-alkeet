@@ -23,9 +23,9 @@ const InputSkill = ({newSkill, changeHandler, submitHandler}) => {
 const Skills = ({skills, newSkill, changeHandler, submitHandler}) => {
     return (
         <div className="part">
-            <h1>(EN) Olen oppinut seuraavia asioita:</h1>
+            <h1>Olen oppinut seuraavia asioita:</h1>
             <div className="skillsContainer">
-            <InputSkill changeHandler={changeHandler} newSkill={newSkill}
+            <InputSkill changeHandler={changeHandler} newSkill={newSkill} submitHandler={submitHandler}
             />
             <ul className="Skills">
             {skills.map(s => <Skill skill={s} key={skills.indexOf(s)}  />) }

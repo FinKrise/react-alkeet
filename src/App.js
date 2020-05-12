@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from './photo.jpg';
+import logo from './photo.png';
 import './App.css';
 import Course from './components/Course';
 import Teht1 from './components/Teht1';
@@ -22,7 +22,7 @@ const kurssi2 = {id:1, course: "Java", teacher: "Eerikki Maula", class: "B2069"}
 const kurssi3 = {id:2, course: "Unity", teacher: "Eerikki Maula", class: "B2074"};
 const kurssit = [kurssi1, kurssi2, kurssi3]
 
-const initialSkills = ["ebin"];
+const initialSkills = ["HTML ja CSS", "PHP ja SQL"];
 
 
 
@@ -58,7 +58,7 @@ const handleSubmit = event => {
         <img src={logo} className="App-logo" alt="logo" />
         <br></br>
         <h1>
-          Kiitos ja näkemiin!
+          React harj1
         </h1>
         <Course show={show[0]} partName={coursePart} partDate={courseDate} partContents={courseContents}/>
         <ToggleButton show={show[0]} clickHandler={handleClick} buttonNumber={0} />
@@ -76,11 +76,11 @@ const handleSubmit = event => {
         <footer>
         <a
           className="App-link"
-          href="https://www.youtube.com/user/niilo22"
+          href="https://github.com/FinKrise/react-alkeet"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Subscribe to Niilo22
+          Juu
         </a>
         </footer>
       </header>
